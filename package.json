@@ -1,6 +1,6 @@
 {
   "name": "@arckit/i18n",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Internationalization with i18next, language detection, and React provider support",
   "packageManager": "pnpm@10.33.0",
   "license": "MIT",
