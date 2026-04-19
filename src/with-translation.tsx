@@ -9,7 +9,4 @@ export type TranslationProps = {
 
 export const withTranslation =
   <P extends object>(Component: (props: P & TranslationProps) => ReactNode) =>
-  (props: P): ReactNode => {
-    const t = inject(TRANSLATION);
-    return <Component {...props} t={t} />;
-  };
+  (props: P): ReactNode => <Component {...props} t={inject(TRANSLATION)}/>;
