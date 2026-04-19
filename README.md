@@ -51,21 +51,6 @@ import { I18nProvider } from '@arckit/i18n/client';
 </I18nProvider>
 ```
 
-### Next.js — server-side integration
-
-```typescript
-import { withI18n, withLang, metadataTranslation } from '@arckit/i18n/nextjs';
-
-// In a layout
-export default layoutBuilder()
-  .use(withLang(i18n))
-  .use(withI18n(i18n)('namespace'))
-  .render(async ({ lang }, { children }) => <html lang={lang}>...</html>);
-
-// Metadata from translations
-export const generateMetadata = metadataTranslation(i18n)('namespace');
-```
-
 <h2 id="api">📖 API</h2>
 
 ### Core (`@arckit/i18n`)
@@ -90,15 +75,6 @@ export const generateMetadata = metadataTranslation(i18n)('namespace');
 | `fromCookie(options)` | Detect language from a cookie |
 | `fromHeader(options)` | Detect language from Accept-Language header |
 | `fromUrl(options)` | Detect language from URL path |
-
-### Next.js (`@arckit/i18n/nextjs`)
-
-| Export | Description |
-|--------|-------------|
-| `withI18n(config)(namespaces)` | Layout/page middleware for server-side i18n setup |
-| `withLang(config)` | Layout middleware for language detection |
-| `getLang(config)` | Get current language on the server |
-| `metadataTranslation(config)(namespace)` | Generate page metadata from translation files |
 
 <h2 id="contributing">🤗 Contributing</h2>
 

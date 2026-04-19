@@ -45,16 +45,6 @@
         "types": "./dist/detectors.d.cts",
         "default": "./dist/detectors.cjs"
       }
-    },
-    "./nextjs": {
-      "import": {
-        "types": "./dist/nextjs.d.ts",
-        "default": "./dist/nextjs.js"
-      },
-      "require": {
-        "types": "./dist/nextjs.d.cts",
-        "default": "./dist/nextjs.cjs"
-      }
     }
   },
   "main": "./dist/index.cjs",
@@ -63,8 +53,7 @@
   "typesVersions": {
     "*": {
       "client": ["dist/client.d.ts"],
-      "detectors": ["dist/detectors.d.ts"],
-      "nextjs": ["dist/nextjs.d.ts"]
+      "detectors": ["dist/detectors.d.ts"]
     }
   },
   "files": ["dist"],
@@ -98,7 +87,6 @@
     "react-i18next": ">=16"
   },
   "devDependencies": {
-    "@arckit/pipeline": "^1.0.0",
     "@arethetypeswrong/cli": "^0.17.0",
     "@biomejs/biome": "^2.4.0",
     "@commitlint/cli": "^20.0.0",
@@ -114,7 +102,6 @@
     "i18next": "^25.0.0",
     "knip": "^5.0.0",
     "lint-staged": "^16.0.0",
-    "next": "^16.0.0",
     "piqure": "^2.2.0",
     "publint": "^0.3.0",
     "react": "^19.0.0",
