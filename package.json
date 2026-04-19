@@ -45,6 +45,14 @@
         "types": "./dist/detectors.d.cts",
         "default": "./dist/detectors.cjs"
       }
+    },
+    "./resource-loader/node": {
+      "import": "./dist/resource-loader.node.js",
+      "require": "./dist/resource-loader.node.cjs"
+    },
+    "./resource-loader/fetch": {
+      "import": "./dist/resource-loader.fetch.js",
+      "require": "./dist/resource-loader.fetch.cjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -53,11 +61,13 @@
   "typesVersions": {
     "*": {
       "client": ["dist/client.d.ts"],
-      "detectors": ["dist/detectors.d.ts"]
+      "detectors": ["dist/detectors.d.ts"],
+      "resource-loader/node": ["dist/resource-loader.node.d.ts"],
+      "resource-loader/fetch": ["dist/resource-loader.fetch.d.ts"]
     }
   },
   "files": ["dist"],
-  "sideEffects": false,
+  "sideEffects": ["./dist/resource-loader.node.*", "./dist/resource-loader.fetch.*"],
   "engines": {
     "node": ">=22"
   },
