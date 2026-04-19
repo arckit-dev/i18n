@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/arckit-dev/i18n/compare/v1.0.0...v1.0.1) (2026-04-19)
+
+
+### Bug Fixes
+
+* move @arckit/injection from dependencies to peerDependencies ([c67d1bc](https://github.com/arckit-dev/i18n/commit/c67d1bcd3d1cb624011e93eb418096b9ab5ac1a8))
+
 # 1.0.0 (2026-04-19)
 
 
