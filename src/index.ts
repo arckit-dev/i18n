@@ -1,5 +1,6 @@
+export { createI18n, type I18nDependencies } from './create-i18n';
 export * from './detect-lng';
 export * from './resource-loader';
 export * from './translation';
 export * from './types';
-export * from './with-translation';
+export type { TranslationProps } from './with-translation';

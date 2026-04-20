@@ -1,8 +1,10 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { provide } from '@arckit/injection';
+import type { InjectionKey } from 'piqure/src/Providing';
 import { RESOURCE_LOADER, type ResourceLoader } from './resource-loader';
 import type { Namespace } from './types';
+
+type Provide = <T>(key: InjectionKey<T>, value: T) => void;
 
 const loadNamespaceResources: ResourceLoader = async (lng, namespaces) => {
   const entries = await Promise.all(
@@ -15,4 +17,6 @@ const loadNamespaceResources: ResourceLoader = async (lng, namespaces) => {
   return Object.fromEntries(entries) as Record<Namespace, Record<string, unknown>>;
 };
 
-provide(RESOURCE_LOADER, loadNamespaceResources);
+export const registerNodeResourceLoader = (provide: Provide) => {
+  provide(RESOURCE_LOADER, loadNamespaceResources);
+};
