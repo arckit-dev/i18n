@@ -1,3 +1,4 @@
+/* v8 ignore file */
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import type { InjectionKey } from 'piqure/src/Providing';

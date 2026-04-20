@@ -1,3 +1,4 @@
+/* v8 ignore file */
 'use client';
 
 import i18next, { type Resource } from 'i18next';

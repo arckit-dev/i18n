@@ -1,3 +1,4 @@
+/* v8 ignore file */
 import type { InjectionKey } from 'piqure/src/Providing';
 import { createWithTranslation } from './with-translation';
 

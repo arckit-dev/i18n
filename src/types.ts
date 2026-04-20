@@ -1,3 +1,4 @@
+/* v8 ignore file */
 import type { TFunction } from 'i18next';
 import type { LngDetector } from './detectors';
 

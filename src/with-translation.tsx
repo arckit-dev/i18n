@@ -1,3 +1,4 @@
+/* v8 ignore file */
 import type { InjectionKey } from 'piqure/src/Providing';
 import type { ReactNode } from 'react';
 import { TRANSLATION } from './translation';

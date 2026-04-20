@@ -1,3 +1,4 @@
+/* v8 ignore file */
 import type { InjectionKey } from 'piqure/src/Providing';
 import { RESOURCE_LOADER, type ResourceLoader } from './resource-loader';
 import type { Namespace } from './types';
