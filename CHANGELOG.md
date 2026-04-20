@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/arckit-dev/i18n/compare/v1.0.1...v1.1.0) (2026-04-20)
+
+
+### Bug Fixes
+
+* ignore unrelevent tests ([759f759](https://github.com/arckit-dev/i18n/commit/759f7593dc9bad5c2cb58f90988d1c73b639c846))
+
+
+### Features
+
+* replace direct injection imports with factory pattern ([1af5924](https://github.com/arckit-dev/i18n/commit/1af59248e8bb6bfc201466318bec96629a217a68))
+
 ## [1.0.1](https://github.com/arckit-dev/i18n/compare/v1.0.0...v1.0.1) (2026-04-19)
 
 
