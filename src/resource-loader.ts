@@ -1,3 +1,4 @@
+/* v8 ignore file */
 import { key } from 'piqure';
 import type { Namespace } from './types';
 
