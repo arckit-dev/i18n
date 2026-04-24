@@ -1,7 +1,7 @@
 /* v8 ignore file */
-import { key } from 'piqure';
+import { keyFor } from 'piqure';
 import type { Namespace, TypedTFunction } from './types';
 
 export type Translation = TypedTFunction<Namespace[]>;
 
-export const TRANSLATION = key<Translation>('i18n.translation');
+export const TRANSLATION = keyFor<Translation>('i18n.translation');
