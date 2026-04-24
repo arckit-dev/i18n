@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/arckit-dev/i18n/compare/v1.1.0...v1.1.1) (2026-04-24)
+
+
+### Bug Fixes
+
+* use keyFor (Symbol.for) for global injection keys ([2e92cd4](https://github.com/arckit-dev/i18n/commit/2e92cd4a531196abf95b75d2113386e2861de1ae))
+
 # [1.1.0](https://github.com/arckit-dev/i18n/compare/v1.0.1...v1.1.0) (2026-04-20)
 
 
